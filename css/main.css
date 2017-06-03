@@ -46,7 +46,6 @@ p {
     padding-bottom: 4px;
     text-align: center;
     width: 136px;
-    box-shadow: 0 0 4px;
 }
 
 .logo span {
@@ -60,6 +59,7 @@ p {
     background-color: #f95c65;
     border-radius: 0 0 5px 5px;
     padding: 39px 21px 8px;
+    box-shadow: 0 0 4px rgba(94, 91, 91, 0.63);
 }
 
 
@@ -89,6 +89,8 @@ p {
 
 .main-menu a:hover {
 	color: #f95c65;
+    transition: 0.3s linear;
+
 }
 
 a.icon-links  {
@@ -122,8 +124,7 @@ h5.header-text-block-h5 {
 }
 
 .btn-link {
-    margin-top: 40px;
-    margin-bottom: 155px
+    padding: 16px 0;
 }
 
 .btn-link a {
@@ -133,6 +134,7 @@ h5.header-text-block-h5 {
     border-radius: 5px;
     font-size: 15px;
     font-weight: bold;
+    box-shadow: 0 0 4px rgba(94, 91, 91, 0.63);
 }
 
 /* content block */
@@ -219,12 +221,29 @@ p.p {
 }
 
 .about .p-1 {
-    font-weight: bold;
-    color: #3e484e;
     margin-bottom: 0;
     font-size: 19px;
    font-weight: 900;
 }
+
+.about .p-1 a {
+    color: #3e484e;
+}
+
+.about .p-1 a:hover {
+    padding: 0;
+    color: #3e484e;
+    border-radius: 0;
+    background: inherit;
+}
+
+a.about-link-img:hover {
+    padding: 0;
+    color: #3e484e;
+    border-radius: 0;
+    background: inherit;
+}
+
 
 .about .p-2 {
     color: #f95c65;
@@ -264,4 +283,69 @@ hr {
 
 .footer-inf p {
 	font-size: 13px;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+.container {
+    width: 100%;
+}
+.header {
+    width: 100%;
+    background-size: cover;
+}
+
+.main-menu a {
+    padding: 0 5px;
+}
+h3.header-text-block-h3 {
+    font-size: 32px;
+    margin-top: 25%;
+}
+h5.header-text-block-h5 {
+    font-size: 17px;
+    margin-bottom: 10%;
+}
+.portfolio {
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.portfolio img {
+    width: 50%;
+}
+.portfolio .p {
+    margin: 0;
+}
+.article {
+    padding: 10px 0;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+.main-menu a {
+    padding: 0 5px;
+}
+h3.header-text-block-h3 {
+    font-size: 32px;
+    margin-top: 12%;
+}
+h5.header-text-block-h5 {
+    font-size: 17px;
+    margin-bottom: 10%;
+}
+.portfolio {
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.portfolio img {
+    width: 50%;
+}
+.portfolio .p {
+    margin: 0;
+}
+.article {
+    padding: 10px 0;
+}
 }
