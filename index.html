@@ -31,8 +31,8 @@
             </div> 
             <div class="col-md-1"> 
               <div class="main-menu"> 
-                <a href="#" class="icon-links link-1"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="#" class="icon-links link-2"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/" class="icon-links link-1" rel="external"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://ru-ru.facebook.com/" class="icon-links link-2" rel="external"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               </div>
             </div>               
                      
@@ -102,24 +102,24 @@
         <div class="row">
           <div class="col-md-4"> 
             <div class="about">
-              <a href=" #" class="about-link-img"><img src="img/1.png"></a>
-              <p class="p-1"><a href="#">MARIE</a></p>
+              <a href="#" class="about-link-img" rel="external"><img src="img/1.png"></a>
+              <p class="p-1"><a href="#" rel="external">MARIE</a></p>
               <p class="p-2">Web designer</p>
               <p>Animals lover. PS and Sketch master. Vegan.</p>                   
             </div>
           </div>
           <div class="col-md-4">
             <div class="about"> 
-              <a href=" #" class="about-link-img"><img src="img/3.png"></a>
-              <p class="p-1"><a href="#">JOEY</a></p>
+              <a href="#" class="about-link-img" rel="external"><img src="img/3.png"></a>
+              <p class="p-1"><a href="#" rel="external">JOEY</a></p>
               <p class="p-2">Web developer</p>
               <p>Coffee lover. Always on bike. iPhone fan.</p>     
             </div>
           </div>
           <div class="col-md-4"> 
             <div class="about">
-              <a href=" #" class="about-link-img"><img src="img/2.png"></a>
-              <p class="p-1"><a href="#">MIKE</a></p>
+              <a href="#" class="about-link-img" rel="external"><img src="img/2.png"></a>
+              <p class="p-1"><a href="#" rel="external">MIKE</a></p>
               <p class="p-2">Copywriter</p>
               <p>MTB biker. Rock fan. Loving Father.</p>
             </div>
@@ -158,11 +158,21 @@
       </div>
     </div>  
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+      /* <![CDATA[ */
+      function externalLinks() {
+        links = document.getElementsByTagName("a");
+        for (i=0; i<links.length; i++) {
+          link = links[i];
+          if (link.getAttribute("href") && link.getAttribute("rel") == "external")
+          link.target = "_blank";
+        }
+      }
+      window.onload = externalLinks;
+      /* ]]> */ 
+  </script>
 
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
