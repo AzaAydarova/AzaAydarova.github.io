@@ -34,8 +34,6 @@ p {
     width: 1000px;
 }
 
-
-/*BLOCK HEADER*/
 .header {
 	background-image: url(../img/jAWyjfT.jpeg);
 	background-repeat: no-repeat;
@@ -64,6 +62,7 @@ p {
     box-shadow: 0 0 4px rgba(94, 91, 91, 0.63);
 }
 
+
 .logo a:hover {
 	background-color: rgba(255, 255, 255, 0.56);
 	color: #f95c65;
@@ -91,6 +90,7 @@ p {
 .main-menu a:hover {
 	color: #f95c65;
     transition: 0.3s linear;
+
 }
 
 a.icon-links  {
@@ -137,8 +137,8 @@ h5.header-text-block-h5 {
     box-shadow: 0 0 4px rgba(94, 91, 91, 0.63);
 }
 
+/* content block */
 
-/*BLOCK CONTENT*/
 .content {
 	color: #3e484e;
 }
@@ -151,22 +151,35 @@ h5.header-text-block-h5 {
 	transition: 0.3s linear;
 }
 
-.article { padding: 90px 0 105px 0; }
+.article {
+    padding: 90px 0 105px 0;
+	
+}
 
-h4 { font-weight: 600; }
+h4 {
+	font-weight: 600;
+}
 
-span { color: #f95c65; }
+span {
+	color: #f95c65;
+}
 
 .content a {
 	color: #f95c65;
 	font-weight: bold;
 }
 
-.content h3 { font-weight: 600; }
+.content h3 {
+	font-weight: 600;
+}
 
-.content p { color: #aaafb3; }
+.content p {
+    color: #aaafb3;
+}
 
-.portfolio { margin-bottom: 105px; }
+.portfolio {
+	margin-bottom: 105px;
+}
 
 .portfolio h5 {
 	margin-bottom: 35px;
@@ -179,13 +192,20 @@ span { color: #f95c65; }
 	padding-bottom: 16px;
 }
 
-p.p { margin-bottom: 39px; }
+p.p {
+    margin-bottom: 39px;
+}
 
-.portfolio img { width: 527px; }
+.portfolio img {
+	width: 527px;
+}
 
+/*     */
 
-/* BLOCK - ABOUT OUR TEAM - MAIN PAGE */
-.row .col-md-12 p { font-weight: bold; }
+.row .col-md-12 p {
+	font-weight: bold;
+}
+
 
 .about {
     margin: 25px 0 35px 0;
@@ -203,10 +223,12 @@ p.p { margin-bottom: 39px; }
 .about .p-1 {
     margin-bottom: 0;
     font-size: 19px;
-    font-weight: 900;
+   font-weight: 900;
 }
 
-.about .p-1 a { color: #3e484e; }
+.about .p-1 a {
+    color: #3e484e;
+}
 
 .about .p-1 a:hover {
     padding: 0;
@@ -233,9 +255,11 @@ a.about-link-img:hover {
 	margin-bottom: 50px;
 }
 
+/* footer block */
 
-/* BLOCK FOOTER */
-hr { margin: 10px 0; }
+hr {
+    margin: 10px 0;
+}
 
 .footer {
     color: #aaafb3;	
@@ -260,51 +284,6 @@ hr { margin: 10px 0; }
 .footer-inf p {
 	font-size: 13px;
 }
-
-
-/*  PAGE OUR TEAM */
-.m-row {    
-    margin-top: 7%;
-    margin-bottom: 3%;
-    border: 2px solid #d3d1d1;
-    box-shadow: 0 0 2px #d3d1d1;
-}
-
-.information-about { margin: 17% 0; }
-
-.information-about p { margin-right: 45px; }
-
-.information-about img {
-    width: 200px;
-    margin: 0 23%;
-}
-
-.information-about h5 {
-    font-weight: 800;
-    padding: 0 0 15px 0;
-}
-
-.information-about-link {
-    text-align: right;
-    margin-bottom: 2%;
-}
-
-.information-about-link a {
-    color: #f95c65;
-    font-weight: bold;
-}
-
-.information-about-link a:hover {
-    padding: 5px;
-    background-color: #f95c65;
-    color: #fff;
-    border-radius: 3px;
-    transition: 0.3s linear;
-}
-
-
-
-
 
 
 @media screen and (min-width: 320px) and (max-width: 800px) {
